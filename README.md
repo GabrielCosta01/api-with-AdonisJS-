@@ -31,6 +31,28 @@ yarn install
 # ou se estiver usando pnpm
 pnpm install
 ```
+### Exemplo de Objeto de Grupo
+```json
+{
+  "name": "Supermarket",
+  "description": "Group for car parts and accessories",
+  "status": "active",
+  "category": "Alimenticio"
+}
+```
+
+### Exemplo de Objeto Produto
+
+```json
+{
+  "name": "Smartphone X100",
+  "description": "Latest model with advanced features and sleek design.",
+  "price": 799.99,
+  "stock": 50,
+  "category": "Electronics",
+  "status": "active"
+}
+```
 
 ## Endpoints de Produtos
 
