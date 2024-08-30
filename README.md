@@ -30,6 +30,7 @@ npm install
 yarn install
 # ou se estiver usando pnpm
 pnpm install
+```
 
 ## Endpoints de Produtos
 
