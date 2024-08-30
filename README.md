@@ -1,6 +1,7 @@
 # API de Produtos e Grupos de Produtos
 
 Esta API permite a gestão de produtos e grupos de produtos. Abaixo estão os endpoints disponíveis, organizados por suas respectivas rotas.
+(Espero que goste :0)
 
 ## Como Rodar o Projeto
 
