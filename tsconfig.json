@@ -1,22 +1,31 @@
 {
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
+    "module": "NodeNext",             // Define o módulo para ESM
+    "moduleResolution": "NodeNext",   // Define a resolução do módulo para ESM
+    "rootDir": "./",                  // Define a raiz dos arquivos fonte
+    "outDir": "./build",              // Diretório para os arquivos compilados
+    "baseUrl": ".",                   // Base para resolução de módulos
     "paths": {
-      "#controllers/*": ["./app/controllers/*.js"],
-      "#exceptions/*": ["./app/exceptions/*.js"],
-      "#models/*": ["./app/models/*.js"],
-      "#mails/*": ["./app/mails/*.js"],
-      "#services/*": ["./app/services/*.js"],
-      "#listeners/*": ["./app/listeners/*.js"],
-      "#events/*": ["./app/events/*.js"],
-      "#middleware/*": ["./app/middleware/*.js"],
-      "#validators/*": ["./app/validators/*.js"],
-      "#providers/*": ["./app/providers/*.js"],
-      "#policies/*": ["./app/policies/*.js"],
-      "#abilities/*": ["./app/abilities/*.js"],
-      "#database/*": ["./database/*.js"],
-      "#tests/*": ["./tests/*.js"],
-      "#start/*": ["./start/*.js"],
-      "#config/*": ["./config/*.js"]
-    }
-  }
+      "#controllers/*": ["app/Controllers/*"], // Alias para os controladores
+      "#models/*": ["app/Models/*"],           // Alias para os modelos
+      "#views/*": ["resources/views/*"]        // Alias para as views
+    },
+    "esModuleInterop": true,          // Interoperabilidade com módulos ES
+    "skipLibCheck": true,             // Ignora verificação de tipos de bibliotecas
+    "forceConsistentCasingInFileNames": true, // Força consistência em nomes de arquivos
+    "sourceMap": true,                // Gera mapas de fonte para depuração
+    "preserveWatchOutput": true,      // Preserva a saída do compilador durante o watch mode
+    "strict": true                    // Habilita todas as verificações estritas
+  },
+  "include": [
+    "app/**/*.ts",
+    "start/**/*.ts",
+    "config/**/*.ts",
+    "database/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules", // Exclui node_modules
+    "build"         // Exclui diretório build
+  ]
 }
