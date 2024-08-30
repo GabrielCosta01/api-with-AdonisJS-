@@ -2,6 +2,35 @@
 
 Esta API permite a gestão de produtos e grupos de produtos. Abaixo estão os endpoints disponíveis, organizados por suas respectivas rotas.
 
+## Como Rodar o Projeto
+
+### 1. Pré-requisitos
+
+Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
+
+- **Node.js** (versão 16.x ou superior)
+- **npm** ou **yarn** ou **pnpm**
+- **AdonisJS CLI** (versão 6)
+
+### 2. Clonar o Repositório
+
+Primeiro, clone o repositório do projeto para a sua máquina local:
+
+```bash
+git clone [https://github.com/seu-usuario/seu-projeto.git](https://github.com/GabrielCosta01/teste-simple.git)
+
+### 3. Instalar as Dependências
+
+Navegue até o diretório do projeto e instale as dependências necessárias:
+
+```bash
+cd seu-projeto
+npm install
+# ou se estiver usando yarn
+yarn install
+# ou se estiver usando pnpm
+pnpm install
+
 ## Endpoints de Produtos
 
 ### `GET /product/:groupId`
