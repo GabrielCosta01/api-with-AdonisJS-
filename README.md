@@ -18,7 +18,7 @@ Primeiro, clone o repositório do projeto para a sua máquina local:
 
 ```bash
 git clone [https://github.com/seu-usuario/seu-projeto.git](https://github.com/GabrielCosta01/teste-simple.git)
-
+```
 ### 3. Instalar as Dependências
 
 Navegue até o diretório do projeto e instale as dependências necessárias:
